@@ -9,4 +9,4 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
-I changed how the default/or fallback value for the candidate is initialized. This is because the fallback is a const variable value that never changes within the function and that is the value set for the candidate variable in the event that it is absent and also did set this value directly onto the candidate variable to remove the need for reassignment. I also removed the conditional statement that checks for the value of the candidate data as there is no longer a need for that due to it being initialized at the top of the function.
+I changed how the candidate initial or fallback value is set, this removes the unneccessary extra conditional statement which check if the candidate value is null and i converted the fucntion to an e6 function making it more readable. 
